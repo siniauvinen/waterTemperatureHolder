@@ -23,4 +23,4 @@ A list of technologies that were used to create the project.
 
 ### Installation
 ***
-No special requirements. Water temperature holder is run on any browser and can be found from
+No special requirements. Water temperature holder is run on any browser and can be found from https://watertemperature.herokuapp.com/
