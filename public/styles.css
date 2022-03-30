@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+    overflow-x: hidden;  
+    font-family: 'Courier New', Courier, monospace; 
+}
+body {
+    height: 100%;
+    min-width: 320px;
+    overflow-x: hidden;  
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#page-container {
+    min-height: 100%;
+    margin-top: -140px;
+    padding-top: 140px;
+    margin-bottom: -60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* NAVIGAATIO */
+.navbar {
+    margin-bottom: 30px;
+    background-color: rgb(52, 58, 64);
+    height: 100px;
+}
+.nav-link {
+    color:white;
+    padding:10px;
+    margin-right: 20px;
+}
+.nav-link:hover {
+    color:rgb(2, 2, 2);
+    text-decoration: none;
+    background-color: rgb(204, 180, 204);
+}
+.navbar-brand {
+    color:whitesmoke;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.navbar-brand:hover {
+    color:whitesmoke;
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        margin-left: 0px;
+    }
+    .nav-link {
+        margin-right: 0px;
+    }
+  }
+.header:hover {
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(204, 180, 204);
+    margin-top: 15px;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+/* INFO TEXT */
+
+#kotisivunOtsikko {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#infotext {
+    width: 80%;
+    padding: 20px;
+    color: rgb(52, 58, 64);
+}
+
+/* VEDEN LÄMPÖTILAN INDIKAATTORI */
+#indikaattori{
+    padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+    #indikaattori {
+      font-size: large;
+    }
+  }
+
+/* TABLE */
+
+.table {
+    width: 70%;
+    margin-top: 50px;
+}
+th {
+    color: black;
+}
+
