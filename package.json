@@ -10,21 +10,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/siniauvinen/waterTemperatureHolder.git"
-  },
   "author": "Sini",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/siniauvinen/waterTemperatureHolder/issues"
-  },
-  "homepage": "https://github.com/siniauvinen/waterTemperatureHolder#readme",
   "dependencies": {
     "axios": "^0.26.1",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "request": "^2.88.2",
     "require": "^2.4.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siniauvinen/waterTemperatureHolder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/siniauvinen/waterTemperatureHolder/issues"
+  },
+  "homepage": "https://github.com/siniauvinen/waterTemperatureHolder#readme"
 }
