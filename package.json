@@ -1,0 +1,30 @@
+{
+  "name": "watertemperatureholder",
+  "version": "1.0.0",
+  "description": "An app for checking water temperatures of Finnish metropolitan area",
+  "engines": {
+    "node": "16.13.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siniauvinen/waterTemperatureHolder.git"
+  },
+  "author": "Sini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siniauvinen/waterTemperatureHolder/issues"
+  },
+  "homepage": "https://github.com/siniauvinen/waterTemperatureHolder#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "request": "^2.88.2",
+    "require": "^2.4.20"
+  }
+}
