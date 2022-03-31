@@ -1,12 +1,11 @@
 html {
     height: 100%;
-    
+    overflow-x: hidden;  
     font-family: 'Courier New', Courier, monospace; 
 }
 body {
     height: 100%;
-    min-width: 320px;
-     
+    overflow-x: hidden;  
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -87,6 +86,10 @@ footer {
 }
 
 /* VEDEN LÄMPÖTILAN INDIKAATTORI */
+#indikaattoriOtsikko{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 #indikaattori{
     padding: 20px;
 }
@@ -105,4 +108,5 @@ footer {
 th {
     color: black;
 }
+
 

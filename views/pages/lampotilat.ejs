@@ -4,22 +4,33 @@
     <%- include('../partials/head')%>
   </head>
   <body>
-      <%- include('../partials/navigation')%>
+    <%- include('../partials/navigation')%>
 
-      <div class="container">
-        <h4 class="row justify-content-center">Veden lämpotilan indikaattori</h4>
-        <div class="row justify-content-center">
-          <h2 style="background-color:rgb(184, 218, 255)" id="indikaattori">+0</h2>
-          <h2 style="background-color:rgb(190, 229, 235)" id="indikaattori">+5</h2>
-          <h2 style="background-color:rgb(195, 230, 203)" id="indikaattori">+10</h2>
-          <h2 style="background-color:rgb(255, 238, 186)" id="indikaattori">+15</h2>
-          <h2 style="background-color:rgb(245, 198, 203)" id="indikaattori">+20</h2>
-        </div>
+    <div class="container">
+      <h4 class="row justify-content-center" id="indikaattoriOtsikko">Veden lämpotilan indikaattori</h4>
+      <div class="row justify-content-center">
+        <h2 style="background-color: rgb(184, 218, 255)" id="indikaattori">
+          +0
+        </h2>
+        <h2 style="background-color: rgb(190, 229, 235)" id="indikaattori">
+          +5
+        </h2>
+        <h2 style="background-color: rgb(195, 230, 203)" id="indikaattori">
+          +10
+        </h2>
+        <h2 style="background-color: rgb(255, 238, 186)" id="indikaattori">
+          +15
+        </h2>
+        <h2 style="background-color: rgb(245, 198, 203)" id="indikaattori">
+          +20
+        </h2>
       </div>
+    </div>
 
-      <div class="container">
-        <div class="row justify-content-center">
-          <table class="table borderless">
+    <div class="container">
+      <div class="col-xs-12">
+        <div class="row table-responsive-sm justify-content-center">
+          <table class="table">
             <tr class="bg-light">
               <th>Mittausaika</th>
               <th>Paikka</th>
@@ -40,7 +51,8 @@
               <td><%= unit.ilmanlampotila %></td>
             </tr>
 
-            <%} else if (unit.vedenlampotila < 10 && unit.vedenlampotila > 5) { %>
+            <%} else if (unit.vedenlampotila < 10 && unit.vedenlampotila > 5) {
+            %>
 
             <tr class="table-info">
               <td>
@@ -53,49 +65,51 @@
               <td><%= unit.ilmanlampotila %></td>
             </tr>
 
-            <%} else if (unit.vedenlampotila < 10 && unit.vedenlampotila > 15) { %>
+            <%} else if (unit.vedenlampotila < 10 && unit.vedenlampotila > 15) {
+            %>
 
-              <tr class="table-success">
-                <td>
-                  <%= unit.aika.slice(8, 10) + "." + unit.aika.slice(5, 7) + "." +
-                  unit.aika.slice(0, 4)%> <br />
-                  <%= unit.aika.slice(11, 16)%>
-                </td>
-                <td><%= unit.paikka %></td>
-                <td><%= unit.vedenlampotila %></td>
-                <td><%= unit.ilmanlampotila %></td>
-              </tr>
+            <tr class="table-success">
+              <td>
+                <%= unit.aika.slice(8, 10) + "." + unit.aika.slice(5, 7) + "." +
+                unit.aika.slice(0, 4)%> <br />
+                <%= unit.aika.slice(11, 16)%>
+              </td>
+              <td><%= unit.paikka %></td>
+              <td><%= unit.vedenlampotila %></td>
+              <td><%= unit.ilmanlampotila %></td>
+            </tr>
 
-              <%} else if (unit.vedenlampotila < 15 && unit.vedenlampotila > 20) { %>
+            <%} else if (unit.vedenlampotila < 15 && unit.vedenlampotila > 20) {
+            %>
 
-                <tr class="table-warning">
-                  <td>
-                    <%= unit.aika.slice(8, 10) + "." + unit.aika.slice(5, 7) + "." +
-                    unit.aika.slice(0, 4)%> <br />
-                    <%= unit.aika.slice(11, 16)%>
-                  </td>
-                  <td><%= unit.paikka %></td>
-                  <td><%= unit.vedenlampotila %></td>
-                  <td><%= unit.ilmanlampotila %></td>
-                </tr>
+            <tr class="table-warning">
+              <td>
+                <%= unit.aika.slice(8, 10) + "." + unit.aika.slice(5, 7) + "." +
+                unit.aika.slice(0, 4)%> <br />
+                <%= unit.aika.slice(11, 16)%>
+              </td>
+              <td><%= unit.paikka %></td>
+              <td><%= unit.vedenlampotila %></td>
+              <td><%= unit.ilmanlampotila %></td>
+            </tr>
 
             <%} else { %>
-              <tr class="table-danger">
-                <td>
-                  <%= unit.aika.slice(8, 10) + "." + unit.aika.slice(5, 7) + "." +
-                  unit.aika.slice(0, 4)%> <br />
-                  <%= unit.aika.slice(11, 16)%>
-                </td>
-                <td><%= unit.paikka %></td>
-                <td><%= unit.vedenlampotila %></td>
-                <td><%= unit.ilmanlampotila %></td>
-              </tr>
-
+            <tr class="table-danger">
+              <td>
+                <%= unit.aika.slice(8, 10) + "." + unit.aika.slice(5, 7) + "." +
+                unit.aika.slice(0, 4)%> <br />
+                <%= unit.aika.slice(11, 16)%>
+              </td>
+              <td><%= unit.paikka %></td>
+              <td><%= unit.vedenlampotila %></td>
+              <td><%= unit.ilmanlampotila %></td>
+            </tr>
 
             <% } %> <% })%>
           </table>
         </div>
       </div>
+    </div>
 
     <%- include('../partials/footer')%>
   </body>
