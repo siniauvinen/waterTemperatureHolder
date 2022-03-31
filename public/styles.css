@@ -84,6 +84,11 @@ footer {
     padding: 20px;
     color: rgb(52, 58, 64);
 }
+@media only screen and (max-width: 530px) {
+    #infotext {
+      width: 100%;
+    }
+  }
 
 /* VEDEN LÄMPÖTILAN INDIKAATTORI */
 #indikaattoriOtsikko{
